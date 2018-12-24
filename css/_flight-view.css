@@ -1,0 +1,419 @@
+.flight-view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: distribute;
+  align-content: space-around;
+  margin-right: 0;
+  margin-left: 0;
+  margin-top: 0;
+  height: 900px;
+  overflow: hidden; }
+  .flight-view__top {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(85, 139, 87, 0.1)), to(rgba(131, 175, 127, 0.1))), url("../img/kyoto-bg.jpg");
+    background-image: -webkit-linear-gradient(rgba(85, 139, 87, 0.1) 100%, rgba(131, 175, 127, 0.1) 100%), url("../img/kyoto-bg.jpg");
+    background-image: -o-linear-gradient(rgba(85, 139, 87, 0.1) 100%, rgba(131, 175, 127, 0.1) 100%), url("../img/kyoto-bg.jpg");
+    background-image: linear-gradient(rgba(85, 139, 87, 0.1) 100%, rgba(131, 175, 127, 0.1) 100%), url("../img/kyoto-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding: 10px 50px 10px 50px;
+    height: 500px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-line-pack: space-evenly;
+    align-content: space-evenly;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .flight-view__heading {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 20px;
+    text-shadow: 0 10rem 10rem #558b57; }
+    .flight-view__heading h3 {
+      text-transform: uppercase; }
+    @media (max-width: 700px) {
+      .flight-view__heading {
+        font-size: 15px;
+        margin-bottom: 10px; } }
+  @media (max-width: 700px) and (max-width: 700px) {
+    .flight-view__heading {
+      font-size: 12px;
+      margin-bottom: 5px; } }
+  .flight-view__search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #f8f8f8;
+    border-radius: 50px;
+    padding: 2px 2px 2px 8px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    @media (max-width: 790px) {
+      .flight-view__search {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        text-align: center;
+        background-color: #f8f8f8;
+        border-radius: 5px; } }
+    @media (max-width: 700px) {
+      .flight-view__search {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        border-radius: 0;
+        width: 120px;
+        padding: 2px 2px 2px 2px;
+        border-radius: 5px; } }
+    @media (max-width: 450px) {
+      .flight-view__search {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 110%;
+        background-color: transparent;
+        padding: 0px; } }
+    .flight-view__search input[type="text"], .flight-view__search textarea {
+      background-color: #f8f8f8; }
+    .flight-view__search__destination, .flight-view__search__date, .flight-view__search__passenger {
+      border: none;
+      height: 50px;
+      font-size: 12px; }
+      @media (max-width: 1200px) {
+        .flight-view__search__destination, .flight-view__search__date, .flight-view__search__passenger {
+          width: 120px; } }
+  @media (max-width: 1200px) and (max-width: 790px) {
+    .flight-view__search__destination, .flight-view__search__date, .flight-view__search__passenger {
+      width: 100px;
+      height: 30px;
+      text-align: center;
+      font-size: 10px; } }
+  @media (max-width: 1200px) and (max-width: 790px) and (max-width: 700px) {
+    .flight-view__search__destination, .flight-view__search__date, .flight-view__search__passenger {
+      border: 2px solid #276733;
+      color: #276733;
+      text-align: left;
+      padding-left: 2px;
+      margin-top: 2px;
+      margin-bottom: 4px; } }
+      .flight-view__search__destination:focus, .flight-view__search__date:focus, .flight-view__search__passenger:focus {
+        outline: none; }
+    .flight-view__search .search__icon--hover {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+      -webkit-transition: all .3s ease-in;
+      -o-transition: all .3s ease-in;
+      transition: all .3s ease-in; }
+      .flight-view__search .search__icon--hover--green {
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+        fill: #276733; }
+      @media (max-width: 700px) {
+        .flight-view__search .search__icon--hover {
+          fill: white; } }
+      @media (max-width: 450px) {
+        .flight-view__search .search__icon--hover {
+          fill: white; } }
+    .flight-view__search__btn {
+      background-image: -webkit-gradient(linear, left top, right top, from(var(--color-primary-light)), to(var(--color-primary)));
+      background-image: -webkit-linear-gradient(left, var(--color-primary-light), var(--color-primary));
+      background-image: -o-linear-gradient(left, var(--color-primary-light), var(--color-primary));
+      background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary));
+      border-radius: 30px;
+      width: 50px;
+      padding-bottom: 10px;
+      padding-top: 10px; }
+      .flight-view__search__btn svg {
+        fill: #fff; }
+      @media (max-width: 1200px) {
+        .flight-view__search__btn {
+          width: 100px; } }
+      @media (max-width: 450px) {
+        .flight-view__search__btn {
+          width: 50px;
+          height: 50px;
+          margin-top: 13px;
+          border-radius: 25px;
+          padding-bottom: 10px; } }
+  .flight-view__deals {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    @media (max-width: 450px) {
+      .flight-view__deals {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 100%; } }
+    .flight-view__deals__deal {
+      margin: -60px 10px 10px 10px;
+      padding: 10px;
+      height: 300px;
+      color: white;
+      border-radius: 10px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+      box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3); }
+      @media (max-width: 700px) {
+        .flight-view__deals__deal {
+          height: 200px;
+          margin: 0;
+          padding: 10px;
+          border-radius: 0;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          font-size: 12px; } }
+      @media (max-width: 500px) {
+        .flight-view__deals__deal {
+          height: 150px;
+          margin: 0;
+          padding: 10px;
+          border-radius: 0; } }
+      .flight-view__deals__deal--1 {
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(85, 139, 87, 0.5)), to(rgba(131, 175, 127, 0.5))), url("../img/tolyo-bg.jpg");
+        background-image: -webkit-linear-gradient(rgba(85, 139, 87, 0.5) 100%, rgba(131, 175, 127, 0.5) 100%), url("../img/tolyo-bg.jpg");
+        background-image: -o-linear-gradient(rgba(85, 139, 87, 0.5) 100%, rgba(131, 175, 127, 0.5) 100%), url("../img/tolyo-bg.jpg");
+        background-image: linear-gradient(rgba(85, 139, 87, 0.5) 100%, rgba(131, 175, 127, 0.5) 100%), url("../img/tolyo-bg.jpg");
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        -webkit-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out; }
+        @media (max-width: 700px) {
+          .flight-view__deals__deal--1 {
+            background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(85, 139, 87, 0)), to(rgba(131, 175, 127, 0))), url("../img/tolyo-bg.jpg");
+            background-image: -webkit-linear-gradient(rgba(85, 139, 87, 0) 100%, rgba(131, 175, 127, 0) 100%), url("../img/tolyo-bg.jpg");
+            background-image: -o-linear-gradient(rgba(85, 139, 87, 0) 100%, rgba(131, 175, 127, 0) 100%), url("../img/tolyo-bg.jpg");
+            background-image: linear-gradient(rgba(85, 139, 87, 0) 100%, rgba(131, 175, 127, 0) 100%), url("../img/tolyo-bg.jpg"); } }
+        .flight-view__deals__deal--1__btn {
+          border: none;
+          color: var(--color-primary);
+          font-size: 12px;
+          padding-bottom: 2px;
+          display: inline-block;
+          background-color: transparent;
+          cursor: pointer;
+          -webkit-transition: all .2s;
+          -o-transition: all .2s;
+          transition: all .2s;
+          opacity: 0;
+          visibility: hidden; }
+          .flight-view__deals__deal--1__btn span {
+            margin-left: 3px;
+            -webkit-transition: margin-left .2s;
+            -o-transition: margin-left .2s;
+            transition: margin-left .2s;
+            opacity: 0;
+            visibility: hidden; }
+        .flight-view__deals__deal--1:hover {
+          background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(85, 139, 87, 0.1)), to(rgba(131, 175, 127, 0.1))), url("../img/tolyo-bg.jpg");
+          background-image: -webkit-linear-gradient(rgba(85, 139, 87, 0.1) 100%, rgba(131, 175, 127, 0.1) 100%), url("../img/tolyo-bg.jpg");
+          background-image: -o-linear-gradient(rgba(85, 139, 87, 0.1) 100%, rgba(131, 175, 127, 0.1) 100%), url("../img/tolyo-bg.jpg");
+          background-image: linear-gradient(rgba(85, 139, 87, 0.1) 100%, rgba(131, 175, 127, 0.1) 100%), url("../img/tolyo-bg.jpg");
+          -webkit-transform: scaleY(1.1);
+          -ms-transform: scaleY(1.1);
+          transform: scaleY(1.1); }
+          .flight-view__deals__deal--1:hover button {
+            -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2);
+            -webkit-transition: all .3s ease-in-out;
+            -o-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+            opacity: 1;
+            visibility: visible;
+            color: #fff; }
+            .flight-view__deals__deal--1:hover button span {
+              margin-left: 3px;
+              opacity: 1;
+              visibility: visible;
+              color: #fff; }
+            .flight-view__deals__deal--1:hover button:hover {
+              -webkit-transform: scale(1.2);
+              -ms-transform: scale(1.2);
+              transform: scale(1.2); }
+              .flight-view__deals__deal--1:hover button:hover span {
+                margin-left: 8px; }
+      .flight-view__deals__deal--2 {
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(85, 139, 87, 0.3)), to(rgba(131, 175, 127, 0.3))), url("../img/flight-bg.jpg");
+        background-image: -webkit-linear-gradient(rgba(85, 139, 87, 0.3) 100%, rgba(131, 175, 127, 0.3) 100%), url("../img/flight-bg.jpg");
+        background-image: -o-linear-gradient(rgba(85, 139, 87, 0.3) 100%, rgba(131, 175, 127, 0.3) 100%), url("../img/flight-bg.jpg");
+        background-image: linear-gradient(rgba(85, 139, 87, 0.3) 100%, rgba(131, 175, 127, 0.3) 100%), url("../img/flight-bg.jpg");
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        -webkit-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out; }
+        @media (max-width: 700px) {
+          .flight-view__deals__deal--2 {
+            background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(85, 139, 87, 0)), to(rgba(131, 175, 127, 0))), url("../img/flight-bg.jpg");
+            background-image: -webkit-linear-gradient(rgba(85, 139, 87, 0) 100%, rgba(131, 175, 127, 0) 100%), url("../img/flight-bg.jpg");
+            background-image: -o-linear-gradient(rgba(85, 139, 87, 0) 100%, rgba(131, 175, 127, 0) 100%), url("../img/flight-bg.jpg");
+            background-image: linear-gradient(rgba(85, 139, 87, 0) 100%, rgba(131, 175, 127, 0) 100%), url("../img/flight-bg.jpg"); } }
+        .flight-view__deals__deal--2__btn {
+          border: none;
+          color: var(--color-primary);
+          font-size: 12px;
+          padding-bottom: 2px;
+          display: inline-block;
+          background-color: transparent;
+          cursor: pointer;
+          -webkit-transition: all .2s;
+          -o-transition: all .2s;
+          transition: all .2s;
+          opacity: 0;
+          visibility: hidden; }
+          .flight-view__deals__deal--2__btn span {
+            margin-left: 3px;
+            -webkit-transition: margin-left .2s;
+            -o-transition: margin-left .2s;
+            transition: margin-left .2s;
+            opacity: 0;
+            visibility: hidden; }
+        .flight-view__deals__deal--2:hover {
+          background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(85, 139, 87, 0.1)), to(rgba(131, 175, 127, 0.1))), url("../img/tolyo-bg.jpg");
+          background-image: -webkit-linear-gradient(rgba(85, 139, 87, 0.1) 100%, rgba(131, 175, 127, 0.1) 100%), url("../img/tolyo-bg.jpg");
+          background-image: -o-linear-gradient(rgba(85, 139, 87, 0.1) 100%, rgba(131, 175, 127, 0.1) 100%), url("../img/tolyo-bg.jpg");
+          background-image: linear-gradient(rgba(85, 139, 87, 0.1) 100%, rgba(131, 175, 127, 0.1) 100%), url("../img/tolyo-bg.jpg");
+          -webkit-transform: scaleY(1.1);
+          -ms-transform: scaleY(1.1);
+          transform: scaleY(1.1); }
+          .flight-view__deals__deal--2:hover button {
+            -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2);
+            -webkit-transition: all .3s ease-in-out;
+            -o-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+            opacity: 1;
+            visibility: visible;
+            color: #fff; }
+            .flight-view__deals__deal--2:hover button span {
+              margin-left: 3px;
+              opacity: 1;
+              visibility: visible;
+              color: #fff; }
+            .flight-view__deals__deal--2:hover button:hover {
+              -webkit-transform: scale(1.2);
+              -ms-transform: scale(1.2);
+              transform: scale(1.2); }
+              .flight-view__deals__deal--2:hover button:hover span {
+                margin-left: 8px; }
+      .flight-view__deals__deal--3 {
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(85, 139, 87, 0.3)), to(rgba(131, 175, 127, 0.3))), url("../img/hokkaido-bg.jpg");
+        background-image: -webkit-linear-gradient(rgba(85, 139, 87, 0.3) 100%, rgba(131, 175, 127, 0.3) 100%), url("../img/hokkaido-bg.jpg");
+        background-image: -o-linear-gradient(rgba(85, 139, 87, 0.3) 100%, rgba(131, 175, 127, 0.3) 100%), url("../img/hokkaido-bg.jpg");
+        background-image: linear-gradient(rgba(85, 139, 87, 0.3) 100%, rgba(131, 175, 127, 0.3) 100%), url("../img/hokkaido-bg.jpg");
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        -webkit-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out; }
+        @media (max-width: 700px) {
+          .flight-view__deals__deal--3 {
+            background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(85, 139, 87, 0)), to(rgba(131, 175, 127, 0))), url("../img/hokkaido-bg.jpg");
+            background-image: -webkit-linear-gradient(rgba(85, 139, 87, 0) 100%, rgba(131, 175, 127, 0) 100%), url("../img/hokkaido-bg.jpg");
+            background-image: -o-linear-gradient(rgba(85, 139, 87, 0) 100%, rgba(131, 175, 127, 0) 100%), url("../img/hokkaido-bg.jpg");
+            background-image: linear-gradient(rgba(85, 139, 87, 0) 100%, rgba(131, 175, 127, 0) 100%), url("../img/hokkaido-bg.jpg"); } }
+        .flight-view__deals__deal--3__btn {
+          border: none;
+          color: var(--color-primary);
+          font-size: 12px;
+          padding-bottom: 2px;
+          display: inline-block;
+          background-color: transparent;
+          cursor: pointer;
+          -webkit-transition: all .2s;
+          -o-transition: all .2s;
+          transition: all .2s;
+          opacity: 0;
+          visibility: hidden; }
+          .flight-view__deals__deal--3__btn span {
+            margin-left: 3px;
+            -webkit-transition: margin-left .2s;
+            -o-transition: margin-left .2s;
+            transition: margin-left .2s;
+            opacity: 0;
+            visibility: hidden; }
+        .flight-view__deals__deal--3:hover {
+          background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(85, 139, 87, 0.1)), to(rgba(131, 175, 127, 0.1))), url("../img/tolyo-bg.jpg");
+          background-image: -webkit-linear-gradient(rgba(85, 139, 87, 0.1) 100%, rgba(131, 175, 127, 0.1) 100%), url("../img/tolyo-bg.jpg");
+          background-image: -o-linear-gradient(rgba(85, 139, 87, 0.1) 100%, rgba(131, 175, 127, 0.1) 100%), url("../img/tolyo-bg.jpg");
+          background-image: linear-gradient(rgba(85, 139, 87, 0.1) 100%, rgba(131, 175, 127, 0.1) 100%), url("../img/tolyo-bg.jpg");
+          -webkit-transform: scaleY(1.1);
+          -ms-transform: scaleY(1.1);
+          transform: scaleY(1.1); }
+          .flight-view__deals__deal--3:hover button {
+            -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2);
+            -webkit-transition: all .3s ease-in-out;
+            -o-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+            opacity: 1;
+            visibility: visible;
+            color: #fff; }
+            .flight-view__deals__deal--3:hover button span {
+              margin-left: 3px;
+              opacity: 1;
+              visibility: visible;
+              color: #fff; }
+            .flight-view__deals__deal--3:hover button:hover {
+              -webkit-transform: scale(1.2);
+              -ms-transform: scale(1.2);
+              transform: scale(1.2); }
+              .flight-view__deals__deal--3:hover button:hover span {
+                margin-left: 8px; }

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+  <link rel="stylesheet" href="sass/main.css">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+  <title>Relaxito &mdash; plan your perfect trip</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <img src="img/logo.png" alt="" class="logo">
+      <form action="" class="search">
+        <input type="text" class="search__input" placeholder="Search hotels">
+        <button class="search__button">
+          <svg class="search__icon">
+            <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+          </svg>
+        </button>
+      </form>
+      <nav class="user-nav">
+        <div class="user-nav__icon-box">
+          <svg class="user-nav__icon">
+            <use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+          </svg>
+          <span class="user-nav__notification">7</span>
+        </div>
+        <div class="user-nav__icon-box">
+          <svg class="user-nav__icon">
+            <use xlink:href="img/sprite.svg#icon-chat"></use>
+          </svg>
+          <span class="user-nav__notification">13</span>
+        </div>
+        <div class="user-nav__user">
+          <img src="img/user.jpg?noresize" alt="" class="user-nav__user-photo">
+          <span class="user-nav__user-name">Monkey D.Luffy</span>
+        </div>
+      </nav>
+    </header>
+
+    <div class="content">
+      <nav class="sidebar">
+        <ul class="side-nav">
+          <li class="side-nav__item">
+            <a href="index.html" class="side-nav__link">
+              <svg class="side-nav__icon">
+                <use xlink:href="img/sprite.svg#icon-home"></use>
+              </svg>
+              <span>Hotel</span>
+            </a>
+          </li>
+
+          <li class="side-nav__item">
+            <a href="flight.html" class="side-nav__link">
+              <svg class="side-nav__icon">
+                <use xlink:href="img/sprite.svg#icon-aircraft"></use>
+              </svg>
+              <span>Flight</span>
+            </a>
+          </li>
+
+          <li class="side-nav__item side-nav__item--active">
+            <a href="car-rental.html" class="side-nav__link">
+              <svg class="side-nav__icon">
+                <use xlink:href="img/sprite.svg#icon-key"></use>
+              </svg>
+              <span>Car rental</span>
+            </a>
+          </li>
+
+          <li class="side-nav__item">
+            <a href="tours.html" class="side-nav__link">
+              <svg class="side-nav__icon">
+                <use xlink:href="img/sprite.svg#icon-map"></use>
+              </svg>
+              <span>Tours</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class='legal'>
+          &copy: 2018. All right reserved.
+        </div>
+      </nav>
+
+      <main class="car-view" id='car-rental'>
+        <div class="car-view__form">
+          <div class="car-view__form__heading-wrapper">
+            <h1 class="car-view__form__heading-wrapper__heading"> Make your ride</h1>
+            <p class= "car-view__form__heading-wrapper__paragraph"> Rent car to move from local host</p>
+          </div>
+          <div class="car-view__form__search-wrapper">
+            <label for="">Where are you from</label>
+            <select class='car-view__form__search-wrapper__input'name="">
+              <option selected="selected"> Japan</option>
+              <option>South Korea</option>
+              <option>Other...</option>
+            </select>
+            <label for="">Where are you heading</label>
+            <select class='car-view__form__search-wrapper__input'name="">
+              <option selected="selected">Kyoto</option>
+              <option>Nagoya</option>
+              <option>Other...</option>
+            </select>
+            <div class="car-view__form__search-wrapper__date">
+              <input class='car-view__form__search-wrapper__date__input'type="text" name="" value="" placeholder="Pick up date">
+              <input class='car-view__form__search-wrapper__date__input'type="text" name="" value="" placeholder="Return date">
+            </div>
+          </div>
+          <button class="car-view__form__btn"type="button" name="button">Search</button>
+          </div>
+
+        <div class="car-view__cars">
+          <h2 class="car-view__cars__heading">Popular choices</h2>
+          <div class="car-view__cars__wrapper">
+            <div class="car-view__cars__wrapper__car car-view__cars__wrapper__car--1">
+              <div class="car-view__cars__wrapper__car__img">
+                <img src="img/car-1.png" alt="">
+              </div>
+              <div class="car-view__cars__wrapper__car__description">
+                <h2>Lorem ipsum</h2><br>
+                <h4>2 Seater Car</h4><br>
+                <h2><strong>145$</strong>/day</h4>
+              </div>
+            </div>
+            <div class="car-view__cars__wrapper__car car-view__cars__wrapper__car--2">
+              <div class="car-view__cars__wrapper__car__img">
+                <img src="img/car-2.png" alt="">
+              </div>
+              <div class="car-view__cars__wrapper__car__description">
+                <h2>Lorem ipsum</h2><br>
+                <h4>5 Seater Car</h4><br>
+                <h2><strong>125$</strong>/day</h4>
+              </div>
+            </div>
+            <div class="car-view__cars__wrapper__car car-view__cars__wrapper__car--3">
+              <div class="car-view__cars__wrapper__car__img">
+                <img src="img/car-3.png" alt="">
+              </div>
+              <div class="car-view__cars__wrapper__car__description">
+                <h2>Lorem ipsum</h2><br>
+                <h4>5 Seater Car</h4><br>
+                <h2><strong>115$</strong>/day</h4>
+              </div>
+            </div>
+          </div>
+
+          </div>
+
+        </div>
+      </main>
+    </div>
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src ='/js/function.js'></script>
+
+</body>
+
+</html>

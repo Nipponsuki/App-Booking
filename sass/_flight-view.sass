@@ -1,0 +1,437 @@
+.flight-view
+  // background-color: pink
+  display: flex
+  flex-direction: column
+  align-items: center
+  align-content: space-around
+  margin-right: 0
+  margin-left: 0
+  margin-top: 0
+  height: 900px
+  overflow: hidden
+
+
+
+  &__top
+    //background-color: lime
+    background:
+      image: linear-gradient( rgba(85, 139, 87, 0.1) 100%, rgba(131, 175, 127, 0.1)100%),url('../img/kyoto-bg.jpg')
+      repeat: no-repeat
+      position: top center
+      size: cover
+    padding: 10px 50px 10px 50px
+    height: 500px
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-content: space-evenly
+    justify-content: flex-start
+    align-items: center
+
+
+
+
+
+
+
+
+
+  &__heading
+    text-align: center
+    margin-left: auto
+    margin-right: auto
+    color: #fff
+    margin-bottom: 30px
+    margin-top: 30px
+    font-size: 20px
+    text-shadow: 0 10rem 10rem rgba(85, 139, 87,1)
+
+    h3
+      text-transform: uppercase
+
+    @media (max-width: 700px)
+      font-size: 15px
+      margin-bottom: 10px
+
+      @media (max-width: 700px)
+        font-size: 12px
+        margin-bottom: 5px
+
+
+
+
+
+
+  &__search
+    display: flex
+    // margin-left: auto
+    // margin-right: auto
+    // margin-bottom: 50px
+    // margin-top: 30px
+    background-color: #f8f8f8
+    border-radius: 50px
+    padding: 2px 2px 2px 8px
+    justify-content: center
+    align-items: center
+
+
+    @media (max-width: 790px)
+      flex-direction: row
+      //width: 200px
+      justify-content: center
+      align-items: center
+      text-align: center
+      background-color: #f8f8f8
+      border-radius: 5px
+
+    @media (max-width: 700px)
+      flex-direction: column
+      border-radius: 0
+      width: 120px
+      padding: 2px 2px 2px 2px
+      border-radius: 5px
+
+
+    @media (max-width: 450px)
+      flex-wrap: wrap
+      justify-content: center
+      width: 110%
+      background-color: transparent
+      padding: 0px
+
+    input[type="text"], textarea
+      background-color : #f8f8f8
+
+
+    &__destination,
+    &__date,
+    &__passenger
+      border: none
+      height: 50px
+      font-size: 12px
+
+      @media (max-width: 1200px)
+        width: 120px
+
+        @media (max-width: 790px)
+          width: 100px
+          height: 30px
+          text-align: center
+          font-size: 10px
+
+          @media (max-width: 700px)
+            border: 2px solid rgb(39, 103, 51)
+            color: rgb(39, 103, 51)
+            text-align: left
+            padding-left: 2px
+            margin-top: 2px
+            margin-bottom: 4px
+
+
+
+
+
+      &:focus
+        outline: none
+
+    .search__icon--hover
+      transform: scale(1)
+      transition: all .3s ease-in
+
+      &--green
+        transform: scale(1.2)
+        fill: rgb(39, 103, 51)
+
+      @media (max-width: 700px)
+        fill: rgb(39, 103, 51)
+
+      @media (max-width: 450px)
+        fill: rgb(255,255,255)
+        margin-top: 10px
+
+
+
+
+
+    &__btn
+      background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary))
+      border-radius: 30px
+      width: 50px
+      padding-bottom: 10px
+      padding-top: 10px
+
+      svg
+        fill: #fff
+
+
+
+
+      @media (max-width: 1200px)
+        width: 100px
+
+      @media (max-width: 450px)
+        width: 50px
+        height: 50px
+        margin-top: 13px
+        border-radius: 25px
+        padding-bottom: 10px
+
+
+
+
+
+  &__bottom
+    // //background-color: skyblue
+    // margin: 10px
+    // display: flex
+    // justify-content: center
+    //
+  &__deals
+    display: flex
+
+    @media (max-width: 450px)
+      flex-wrap: wrap
+      justify-content: center
+      width: 100%
+
+
+
+    &__deal
+      margin: -60px 10px 10px 10px
+      padding: 10px
+      height: 300px
+      color: white
+      border-radius: 10px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      box-shadow: 0 2rem 6rem rgba(0,0,0,.3)
+
+      @media (max-width: 700px)
+        height: 200px
+        margin: 0
+        padding: 10px
+        border-radius: 0
+        justify-content: center
+        font-size: 12px
+
+
+      @media (max-width: 500px)
+        height: 150px
+        margin: 0
+        padding: 10px
+        border-radius: 0
+
+
+
+
+
+
+
+
+
+
+
+      &--1
+        background:
+          image: linear-gradient( rgba(85, 139, 87, 0.5) 100%, rgba(131, 175, 127, 0.5)100%), url('../img/tolyo-bg.jpg')
+          repeat: no-repeat
+          position: top center
+          size: cover
+        transition: all .3s ease-in-out
+
+        @media (max-width: 700px)
+          background:
+            image: linear-gradient( rgba(85, 139, 87, 0) 100%, rgba(131, 175, 127, 0)100%), url('../img/tolyo-bg.jpg')
+
+        &__btn
+          border: none
+          color: var(--color-primary)
+          font-size: 12px
+          padding-bottom: 2px
+          display: inline-block
+          background-color: transparent
+          cursor: pointer
+          transition: all .2s
+          opacity: 0
+          visibility: hidden
+
+          & span
+            margin-left: 3px
+            transition: margin-left .2s
+            opacity: 0
+            visibility: hidden
+
+
+
+        &:hover
+          background-image: linear-gradient( rgba(85, 139, 87, 0.1) 100%, rgba(131, 175, 127, 0.1)100%),url('../img/tolyo-bg.jpg')
+          transform: scaleY(1.1)
+
+          & button
+            transform: scale(1.2)
+            transition: all .3s ease-in-out
+            opacity: 1
+            visibility: visible
+            color: #fff
+
+            & span
+              margin-left: 3px
+              opacity: 1
+              visibility: visible
+              color: #fff
+
+            &:hover
+              transform: scale(1.2)
+
+              & span
+                margin-left: 8px
+
+
+
+
+
+
+
+      &--2
+        background:
+          image: linear-gradient( rgba(85, 139, 87, 0.3) 100%, rgba(131, 175, 127, 0.3)100%),url('../img/flight-bg.jpg')
+          repeat: no-repeat
+          position: top center
+          size: cover
+        transition: all .3s ease-in-out
+
+        @media (max-width: 700px)
+          background:
+            image: linear-gradient( rgba(85, 139, 87, 0) 100%, rgba(131, 175, 127, 0)100%), url('../img/flight-bg.jpg')
+
+
+        &__btn
+          border: none
+          color: var(--color-primary)
+          font-size: 12px
+          padding-bottom: 2px
+          display: inline-block
+          background-color: transparent
+          cursor: pointer
+          transition: all .2s
+          opacity: 0
+          visibility: hidden
+
+          & span
+            margin-left: 3px
+            transition: margin-left .2s
+            opacity: 0
+            visibility: hidden
+
+
+        &:hover
+          background-image: linear-gradient( rgba(85, 139, 87, 0.1) 100%, rgba(131, 175, 127, 0.1)100%),url('../img/tolyo-bg.jpg')
+          transform: scaleY(1.1)
+
+          & button
+            transform: scale(1.2)
+            transition: all .3s ease-in-out
+            opacity: 1
+            visibility: visible
+            color: #fff
+
+            & span
+              margin-left: 3px
+              opacity: 1
+              visibility: visible
+              color: #fff
+
+            &:hover
+              transform: scale(1.2)
+
+              & span
+                margin-left: 8px
+
+
+
+      &--3
+        background:
+          image: linear-gradient( rgba(85, 139, 87, 0.3) 100%, rgba(131, 175, 127, 0.3)100%),url('../img/hokkaido-bg.jpg')
+          repeat: no-repeat
+          position: top center
+          size: cover
+        transition: all .3s ease-in-out
+
+        @media (max-width: 700px)
+          background:
+            image: linear-gradient( rgba(85, 139, 87, 0) 100%, rgba(131, 175, 127, 0)100%), url('../img/hokkaido-bg.jpg')
+
+
+        &__btn
+          border: none
+          color: var(--color-primary)
+          font-size: 12px
+          padding-bottom: 2px
+          display: inline-block
+          background-color: transparent
+          cursor: pointer
+          transition: all .2s
+          opacity: 0
+          visibility: hidden
+
+          & span
+            margin-left: 3px
+            transition: margin-left .2s
+            opacity: 0
+            visibility: hidden
+
+
+        &:hover
+          background-image: linear-gradient( rgba(85, 139, 87, 0.1) 100%, rgba(131, 175, 127, 0.1)100%),url('../img/tolyo-bg.jpg')
+          transform: scaleY(1.1)
+
+          & button
+            transform: scale(1.2)
+            transition: all .3s ease-in-out
+            opacity: 1
+            visibility: visible
+            color: #fff
+
+            & span
+              margin-left: 3px
+              opacity: 1
+              visibility: visible
+              color: #fff
+
+            &:hover
+              transform: scale(1.2)
+
+              & span
+                margin-left: 8px
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // &__deal-1
+  //   background-color: red
+  //   display: flex
+  //   flex-direction: column
+  //   margin: 10px
+  //
+  // &__deal-2
+  //   background-color: red
+  //   display: flex
+  //   flex-direction: column
+  //   margin: 10px
+  //
+  //
+  // &__deal-3
+  //   background-color: red
+  //   display: flex
+  //   flex-direction: column
+  //   margin: 10px

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+  <link rel="stylesheet" href="sass/main.css">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+  <title>Relaxito &mdash; plan your perfect trip</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <img src="img/logo.png" alt="" class="logo">
+      <form action="" class="search">
+        <input type="text" class="search__input" placeholder="Search hotels">
+        <button class="search__button">
+          <svg class="search__icon">
+            <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+          </svg>
+        </button>
+      </form>
+      <nav class="user-nav">
+        <div class="user-nav__icon-box">
+          <svg class="user-nav__icon">
+            <use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+          </svg>
+          <span class="user-nav__notification">7</span>
+        </div>
+        <div class="user-nav__icon-box">
+          <svg class="user-nav__icon">
+            <use xlink:href="img/sprite.svg#icon-chat"></use>
+          </svg>
+          <span class="user-nav__notification">13</span>
+        </div>
+        <div class="user-nav__user">
+          <img src="img/user.jpg?noresize" alt="" class="user-nav__user-photo">
+          <span class="user-nav__user-name">Monkey D.Luffy</span>
+        </div>
+      </nav>
+    </header>
+
+    <div class="content">
+      <nav class="sidebar">
+        <ul class="side-nav">
+          <li class="side-nav__item">
+            <a href="index.html" class="side-nav__link">
+              <svg class="side-nav__icon">
+                <use xlink:href="img/sprite.svg#icon-home"></use>
+              </svg>
+              <span>Hotel</span>
+            </a>
+          </li>
+
+          <li class="side-nav__item">
+            <a href="flight.html" class="side-nav__link">
+              <svg class="side-nav__icon">
+                <use xlink:href="img/sprite.svg#icon-aircraft"></use>
+              </svg>
+              <span>Flight</span>
+            </a>
+          </li>
+
+          <li class="side-nav__item">
+            <a href="car-rental.html" class="side-nav__link">
+              <svg class="side-nav__icon">
+                <use xlink:href="img/sprite.svg#icon-key"></use>
+              </svg>
+              <span>Car rental</span>
+            </a>
+          </li>
+
+          <li class="side-nav__item side-nav__item--active">
+            <a href="tours.html" class="side-nav__link">
+              <svg class="side-nav__icon">
+                <use xlink:href="img/sprite.svg#icon-map"></use>
+              </svg>
+              <span>Tours</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class='legal'>
+          &copy: 2018. All right reserved.
+        </div>
+      </nav>
+
+      <main class="tours-view" id='tours'>
+        <div class="tours-view__heading">
+          <p>Book your desired place to travel</p>
+          <h1>Travel for live</h1>
+        </div>
+        <div class="tours-view__search">
+            <label for="">From
+            <input type="text" class="tours-view__search__origin">
+            </label>
+            <label for="">To
+              <input type="text" class="tours-view__search__destination">
+            </label>
+            <label for="">
+              Pick a date
+              <input type="text" class="tours-view__search__date">
+            </label>
+            <button class="tours-view__search__btn">Book now</button>
+        </div>
+
+        <div class="tours-view__header show" style="background-image: url('/img/t-bg-2.jpg?noresize');"></div>
+        <div class="tours-view__header" style="background-image: url('./img/t-bg-1.jpg?noresize');"></div>
+        <div class="tours-view__header" style="background-image: url('/img/t-bg-3.jpg?noresize');"></div>
+
+        <div class="tours-view__recommendations">
+          <div class="tours-view__recommendations__heading">
+            <h2>Our recommendations</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+          </div>
+          <div class="tours-view__recommendations__wrapper">
+            <div class="tours-view__recommendations__recommendation">
+              <div class="tours-view__recommendations__recommendation__img">
+                <img src="/img/tour-1.jpg?noresize" alt="">
+              </div>
+              <div class="tours-view__recommendations__recommendation__content">
+                <h3>Kyoto</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+              </div>
+            </div>
+            <div class="tours-view__recommendations__recommendation">
+              <div class="tours-view__recommendations__recommendation__img">
+                <img src="/img/tour-2.jpg?noresize"alt="">
+              </div>
+              <div class="tours-view__recommendations__recommendation__content">
+                <h3>Kyoto</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+              </div>
+            </div>
+            <div class="tours-view__recommendations__recommendation">
+              <div class="tours-view__recommendations__recommendation__img">
+                <img src="/img/tour-3.jpg?noresize" alt="">
+              </div>
+              <div class="tours-view__recommendations__recommendation__content">
+                <h3>Kyoto</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src ='/js/function.js'></script>
+</body>
+
+</html>

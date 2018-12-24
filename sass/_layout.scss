@@ -1,0 +1,131 @@
+.container{
+  max-width: 120rem;
+  margin: 10rem 10rem;
+  background-color: var(--color-grey-light-2);
+  box-shadow: var(--shadow-dark);
+
+  min-height: 50rem;
+
+
+  @media only screen and (max-width:$bp-largest){
+    margin:0;
+    max-width:100%;
+    width:100%;
+  }
+}
+
+
+
+.header{
+  font-size: 1.4rem;
+  height: 7rem;
+  background-color: #fff;
+  border-bottom: var(--line);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media only screen and (max-width: $bp-smallest){
+    flex-wrap: wrap;
+    height: 11rem;
+    align-content: space-around;
+  }
+}
+
+.content{
+  display: flex;
+
+  @media only screen and (max-width:$bp-largest){
+    flex-direction: column;
+  }
+
+}
+
+.sidebar{
+  background-color: var(--color-grey-dark-1);
+  flex: 0 0 18%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.hotel-view{
+  background-color: #fff;
+  flex: 1;
+
+
+  &.is-hide{
+    display: none;
+  }
+
+}
+
+
+.detail {
+  font-size: 1.4rem;
+  display: flex;
+  padding: 4.5rem;
+  background-color: var(--color-grey-light-1);
+  border-bottom: var(--line);
+
+  @media only screen and (max-width:$bp-largest){
+    padding: 3rem;
+  }
+
+
+  @media only screen and (max-width: $bp-small){
+    flex-direction: column;
+  }
+}
+
+.description{
+  background-color: #fff;
+  flex: 0 0 65%;
+  margin-right: 4.5rem;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
+
+  @media only screen and (max-width:$bp-largest){
+    padding: 2rem;
+    margin-right: 3rem;
+  }
+
+  @media only screen and (max-width: $bp-small){
+    margin-right:0;
+    margin-bottom: 3rem;
+  }
+
+
+
+}
+
+.user-reviews {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+.cta {
+  padding: 3.5rem 0;
+  text-align: center;
+
+  @media only screen and (max-width: $bp-large){
+    padding: 2.5rem 0;
+  }
+
+  &__book-now{
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 2.5rem;
+  }
+
+
+}

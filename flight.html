@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="sass/main.css">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+  <title>Relaxito &mdash; plan your perfect trip</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <img src="img/logo.png" alt="" class="logo">
+      <form action="" class="search">
+        <input type="text" class="search__input" placeholder="Search hotels">
+        <button class="search__button">
+          <svg class="search__icon">
+            <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+          </svg>
+        </button>
+      </form>
+      <nav class="user-nav">
+        <div class="user-nav__icon-box">
+          <svg class="user-nav__icon">
+            <use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+          </svg>
+          <span class="user-nav__notification">7</span>
+        </div>
+        <div class="user-nav__icon-box">
+          <svg class="user-nav__icon">
+            <use xlink:href="img/sprite.svg#icon-chat"></use>
+          </svg>
+          <span class="user-nav__notification">13</span>
+        </div>
+        <div class="user-nav__user">
+          <img src="img/user.jpg?noresize" alt="" class="user-nav__user-photo">
+          <span class="user-nav__user-name">Monkey D.Luffy</span>
+        </div>
+      </nav>
+    </header>
+
+    <div class="content">
+      <nav class="sidebar">
+        <ul class="side-nav">
+          <li class="side-nav__item">
+            <a href="index.html" class="side-nav__link">
+              <svg class="side-nav__icon">
+                <use xlink:href="img/sprite.svg#icon-home"></use>
+              </svg>
+              <span>Hotel</span>
+            </a>
+          </li>
+
+          <li class="side-nav__item side-nav__item--active">
+            <a href="flight.html" class="side-nav__link">
+              <svg class="side-nav__icon">
+                <use xlink:href="img/sprite.svg#icon-aircraft"></use>
+              </svg>
+              <span>Flight</span>
+            </a>
+          </li>
+
+          <li class="side-nav__item">
+            <a href="car-rental.html" class="side-nav__link">
+              <svg class="side-nav__icon">
+                <use xlink:href="img/sprite.svg#icon-key"></use>
+              </svg>
+              <span>Car rental</span>
+            </a>
+          </li>
+
+          <li class="side-nav__item">
+            <a href="tours.html" class="side-nav__link">
+              <svg class="side-nav__icon">
+                <use xlink:href="img/sprite.svg#icon-map"></use>
+              </svg>
+              <span>Tours</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class='legal'>
+          &copy: 2018. All right reserved.
+        </div>
+      </nav>
+    <div class="section-wrapper">
+      <main class="flight-view" id='flight'>
+        <div class="flight-view__top">
+          <div class="flight-view__heading">
+              <h1>Use our services to book your flight</h1>
+              <h3>Safety Comfort Refund </h3>
+          </div>
+          <div class="flight-view__search">
+            <svg class="search__icon search__icon--hover">
+              <use xlink:href="img/symbol-defs.svg#icon-location-pin"></use>
+            </svg>
+            <input class='flight-view__search__destination'type="text" name="" value="" placeholder="Tokyo">
+            <svg class="search__icon search__icon--hover">
+              <use xlink:href="img/symbol-defs.svg#icon-location-pin"></use>
+            </svg>
+            <input class='flight-view__search__destination'type="text" name="" value="" placeholder="Seoul">
+            <svg class="search__icon search__icon--hover ">
+              <use xlink:href="img/symbol-defs.svg#icon-calendar"></use>
+            </svg>
+            <input id='date'class='flight-view__search__date'type="text" name="" value="" placeholder=" 11/11/2047">
+            <svg class="search__icon search__icon--hover">
+              <use xlink:href="img/symbol-defs.svg#icon-calendar"></use>
+            </svg>
+            <input class='flight-view__search__date'type="text" name="" value="" placeholder=" 11/11/2017">
+            <svg class="search__icon search__icon--hover">
+              <use xlink:href="img/symbol-defs.svg#icon-user"></use>
+            </svg>
+            <select class='flight-view__search__passenger'name="" value="" placeholder="1 passenger &#x22BB;">
+              <option selected="selected">  1 passenger</option>
+              <option>2 passengers</option>
+              <option>Other...</option>
+            </select>
+            <button class="flight-view__search__btn">
+              <svg class="search__icon">
+                <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+              </svg>
+             </button>
+        </div>
+      </div>
+
+      <div class="flight-view__bottom">
+        <div class="flight-view__deals">
+          <div class="flight-view__deals flight-view__deals__deal flight-view__deals__deal--1">
+            <h3>Price <br>$100</h3>
+            <button class="flight-view__deals__deal--1__btn">Show details<span>&rarr;</span></button>
+              <div class="mini-wrapper">
+                <h1>Lorem ipsum dolor sit amet</h1>
+                <h5>
+                <svg class="search__icon search__icon--pin" >
+                  <use xlink:href="img/symbol-defs.svg#icon-location-pin"></use>
+                </svg>Japan, Tokyo
+              </h5>
+            </div>
+          </div>
+          <div class="flight-view__deals flight-view__deals__deal flight-view__deals__deal--2">
+            <h3>Price <br>$85</h3>
+            <button class="flight-view__deals__deal--2__btn">Show details<span>&rarr;</span></button>
+            <div class="mini-wrapper">
+              <h1>Lorem ipsum dolor sit amet</h1>
+              <h5>
+              <svg class="search__icon search__icon--pin">
+                  <use xlink:href="img/symbol-defs.svg#icon-location-pin"></use>
+                </svg>Japan, Kyoto
+              </h5>
+            </div>
+          </div>
+          <div class="flight-view__deals flight-view__deals__deal flight-view__deals__deal--3">
+            <h3>Price <br>$125</h3>
+            <button class="flight-view__deals__deal--3__btn">Show details<span>&rarr;</span></button>
+            <div class="mini-wrapper">
+              <h1>Lorem ipsum dolor sit amet</h1>
+              <h5>
+                <svg class="search__icon search__icon--pin">
+                  <use xlink:href="img/symbol-defs.svg#icon-location-pin"></use>
+                </svg>Japan, Hokkaido
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cta">
+        <h2 class="cta__book-now">
+          Good news! We have nice prices!
+        </h2>
+        <button class="btn">
+          <span class="btn__visible">Special Deal</span>
+          <span class="btn__invisible">Book now</span>
+        </button>
+      </div>
+      </main>
+    </div>
+    </div>
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src ='/js/function.js'></script>
+
+</body>
+
+</html>
